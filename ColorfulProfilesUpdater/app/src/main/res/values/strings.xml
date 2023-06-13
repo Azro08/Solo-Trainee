@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ColorfulProfilesUpdater</string>
+    <string name="follow">+ Follow</string>
+    <string name="recommended_by">Recommended by:</string>
+    <string name="_1b_5b_users">1B/5B users</string>
+    <string name="left_recommendations">+%1$d</string>
+</resources>
