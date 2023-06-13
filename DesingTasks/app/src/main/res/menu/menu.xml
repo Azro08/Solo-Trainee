@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemCenteringElements"
+        android:title="@string/centering_elements"/>
+
+    <item
+        android:id="@+id/itemScrollView"
+        android:title="@string/scroll_view"/>
+
+    <item
+        android:id="@+id/itemZorder1"
+        android:title="@string/z_order_and_relative_sizes"/>
+
+    <item
+        android:id="@+id/itemZorder2"
+        android:title="@string/z_order2"/>
+
+</menu>

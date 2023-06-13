@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DesingTasks</string>
+    <string name="centering_elements">Centering elements</string>
+    <string name="scroll_view">Scroll view</string>
+    <string name="z_order_and_relative_sizes">z-order and relative sizes</string>
+    <string name="z_order2">z-order 2</string>
+</resources>
