@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/randomImageFragment"
+        android:name="com.example.dynamicuichanges.HideShowImageFragment"
+        android:label="fragment_random_image"
+        tools:layout="@layout/fragment_hide_show_image" />
+    <fragment
+        android:id="@+id/addRemoveViewFragment"
+        android:name="com.example.dynamicuichanges.AddRemoveViewFragment"
+        android:label="fragment_add_remove_view"
+        tools:layout="@layout/fragment_add_remove_view" />
+    <fragment
+        android:id="@+id/addRemoveAlphaFragment"
+        android:name="com.example.dynamicuichanges.AddRemoveAlphaFragment"
+        android:label="fragment_add_remove_alpha"
+        tools:layout="@layout/fragment_add_remove_alpha" />
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.dynamicuichanges.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/nav_to_alpha_fragment"
+            app:destination="@id/addRemoveAlphaFragment" />
+        <action
+            android:id="@+id/nav_to_add_remove_view_fragment"
+            app:destination="@id/addRemoveViewFragment" />
+        <action
+            android:id="@+id/nav_to_hide_show_image_fragment"
+            app:destination="@id/randomImageFragment" />
+    </fragment>
+</navigation>
