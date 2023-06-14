@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         profileList = ProfileManager.generateProfiles(applicationContext)
-        Log.d("prof_size", profileList.size.toString())
         setRecyclerView()
         updateActivity()
     }
@@ -39,7 +38,7 @@ class MainActivity : AppCompatActivity() {
                 runOnUiThread {
                     binding.apply {
                         textViewDescription.text = profileList[index].description
-                        profileImage.setBackgroundColor(profileList[index].image)
+                        profileImage.setBackgroundResource(profileList[index].image)
                         textViewProfileName.text = profileList[index].name
                         textViewLikes.text = profileList[index].likes.toString()
                         textViewPlayedBy.text = profileList[index].playedBy.toString()

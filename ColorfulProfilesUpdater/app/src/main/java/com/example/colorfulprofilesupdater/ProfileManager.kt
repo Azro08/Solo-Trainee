@@ -2,6 +2,7 @@ package com.example.colorfulprofilesupdater
 
 
 import android.content.Context
+import android.graphics.drawable.Drawable
 import androidx.core.content.ContextCompat
 import java.util.Calendar
 import kotlin.random.Random
@@ -15,7 +16,7 @@ object ProfileManager {
         for (i in 1..10) {
             val profile = Profile(
                 name = generateRandomName(),
-                image = generateRandomColor(context),
+                image = generateRandomImageColor(context),
                 timePassed = generateTimePassed(),
                 likes = generateRandomLikes(),
                 views = generateRandomViews(),
@@ -44,17 +45,14 @@ object ProfileManager {
         return names.shuffled().first()
     }
 
-    private fun generateRandomColor(context: Context): Int {
-        val colorIds = listOf(
-            R.color.red, R.color.green, R.color.blue,
-            R.color.yellow, R.color.magenta, R.color.cyan,
-            R.color.orange, R.color.purple, R.color.pink,
-            R.color.lightGreen, R.color.darkGreen, R.color.navy,
-            R.color.coral, R.color.teal, R.color.hotPink,
-            R.color.maroon, R.color.darkCyan, R.color.darkOrange,
-            R.color.slateBlue, R.color.fireBrick
+    private fun generateRandomImageColor(context: Context): Int {
+        val drawableIds = listOf(
+            R.drawable.red_circle_ic, R.drawable.blue_circle_ic, R.drawable.green_circle_ic,
+            R.drawable.black_circle_ic, R.drawable.pink_circle_ic, R.drawable.yellow_circle_ic,
+            R.drawable.accent_circle_ic, R.drawable.orange_circle_ic, R.drawable.navy_circle_ic, R.drawable.circle_ic
         )
-        return ContextCompat.getColor(context, colorIds.shuffled().first())
+        val drawableResId = drawableIds.shuffled().first()
+        return return drawableResId
     }
 
     private fun generateTimePassed(): String {

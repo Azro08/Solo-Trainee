@@ -12,7 +12,7 @@ class RoundedImageAdapter(private var profilesList: List<Profile>) :
         RecyclerView.ViewHolder(binding.root) {
         private var profile: Profile? = null
         fun bind(myProfile: Profile) {
-            binding.imageViewRecommendedByProf.setBackgroundColor(myProfile.image)
+            binding.imageViewRecommendedByProf.setBackgroundResource(myProfile.image)
             profile = myProfile
         }
     }

@@ -49,7 +49,8 @@
         android:layout_height="60dp"
         android:layout_marginStart="40dp"
         android:layout_marginBottom="80dp"
-        app:civ_border_width="1dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/black"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/textViewRecommended"
         app:layout_constraintStart_toStartOf="parent" />
