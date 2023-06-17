@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CustomProgressBar</string>
+    <string name="animate_with_random_value">Animate with random value</string>
+</resources>
