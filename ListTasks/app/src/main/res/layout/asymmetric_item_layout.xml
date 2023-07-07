@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:layout_marginBottom="3dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- CardView for the left side, occupying 70% of the screen width -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/leftCardView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7">
+
+        <ImageView
+            android:id="@+id/imageView1Icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:alpha="0.5"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/textView1Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            tools:text = "DOCTOR"
+            android:layout_margin="4dp"
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+
+        <!-- Top CardView on the right side, occupying 30% of the screen width -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/topRightCardView"
+            android:layout_width="match_parent"
+            android:layout_marginStart="3dp"
+            android:layout_height="50dp">
+
+
+            <ImageView
+                android:id="@+id/imageView2Icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:alpha="0.5"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="3dp" />
+
+            <TextView
+                android:id="@+id/textView2Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_margin="3dp"
+                tools:text = "DOCTOR"
+                android:layout_gravity="end|bottom"
+                android:textColor="@color/white"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Bottom CardView on the right side, occupying 30% of the screen width -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bottomRightCardView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="3dp">
+
+
+            <ImageView
+                android:id="@+id/imageView3Icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:alpha="0.5"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="3dp"/>
+
+            <TextView
+                android:id="@+id/textView3Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_margin="3dp"
+                tools:text = "DOCTOR"
+                android:layout_gravity="end|bottom"
+                android:textColor="@color/white"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

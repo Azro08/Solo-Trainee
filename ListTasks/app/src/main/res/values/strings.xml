@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ListTasks</string>
+    <string name="favorite">Favorite</string>
+    <string name="music">music</string>
+    <string name="places">places</string>
+    <string name="news">news</string>
+    <string name="dashboard">dashboard</string>
+    <string name="error">Сейчас нет доступных пользователей</string>
+    <string name="clear">clear</string>
+
+</resources>

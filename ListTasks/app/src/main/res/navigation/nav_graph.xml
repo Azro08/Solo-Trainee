@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/itemTwoLinesFragment">
+
+    <fragment
+        android:id="@+id/threeLinesFragment"
+        android:name="com.example.listtasks.ui.ThreeLinesItemFragment"
+        android:label="fragment_three_lines_item"
+        tools:layout="@layout/fragment_three_lines_item" />
+    <fragment
+        android:id="@+id/itemTwoLinesFragment"
+        android:name="com.example.listtasks.ui.TwoLinesItemFragment"
+        android:label="fragment_two_lines_item"
+        tools:layout="@layout/fragment_two_lines_item" />
+    <fragment
+        android:id="@+id/advancedListFragment"
+        android:name="com.example.listtasks.ui.AdvancedListFragment"
+        android:label="fragment_advanced_list"
+        tools:layout="@layout/fragment_advanced_list" />
+    <fragment
+        android:id="@+id/asymmetricItemFragment"
+        android:name="com.example.listtasks.ui.AsymmetricItemFragment"
+        android:label="fragment_asymmetric_item"
+        tools:layout="@layout/fragment_asymmetric_item" />
+    <fragment
+        android:id="@+id/twoItemsFragment"
+        android:name="com.example.listtasks.ui.TwoItemsFragment"
+        android:label="fragment_two_items"
+        tools:layout="@layout/fragment_two_items" />
+</navigation>
